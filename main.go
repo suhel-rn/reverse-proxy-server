@@ -43,7 +43,7 @@ func main() {
 
 	go cleanupInactiveClients()
 
-	port := ":8080"
+	port := ":8380"
 
 	log.Printf("Server starting on port %s", port)
 	log.Fatal(http.ListenAndServe(port, r))
